@@ -4,6 +4,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    overflow-x:hidden;
+}
+
 .main_nav{
     background-color: #313030;
     font-size: 13px;
@@ -357,6 +361,7 @@
     width: 70%;
     border-style: none;
     border-radius: 5px;
+    outline:none;
 }
 
 .fifth .inp button {
@@ -376,8 +381,27 @@
 footer {
     left: 0;
     bottom: 0; /* Левый нижний угол */
-    padding: 10px; /* Поля вокруг текста */
     background: #313030; /* Цвет фона */
     color: #555555; /* Цвет текста */
     width: 100%; /* Ширина слоя */
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3{
+    font-size: calc(20px + (50px-20px) * ((100vw - 320px) / (1600 - 320)));
+}
+
+.footer__contacts{
+    //background-color: #ff3333;
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.footer__contacts a img{
+    max-width: 100%;
+    max-height: 3em;
 }
